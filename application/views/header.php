@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="<?php echo $site->site_url;?>assets/img/favicon-76.png">
     <link rel="apple-touch-icon" sizes="152x152" href="<?php echo $site->site_url;?>assets/img/favicon-152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $site->site_url;?>assets/img/favicon-180.png">
-    <meta charset="UTF-8"><!-- www.20script.ir -->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="<?= $site->site_keywords;?> ">
     <meta name="description" content="<?= $site->site_description;?> ">

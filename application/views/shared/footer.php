@@ -11,5 +11,4 @@
         });
     </script>
 </body>
-<link rel="canonical" href="http://www.20script.ir" />
 </html>

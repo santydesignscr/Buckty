@@ -29,5 +29,4 @@
   <script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery-ui.min.js"></script>
   <script type="text/javascript" id="main_app_js" src="<?php echo base_url();?>assets/js/app.js"></script>
 </body>
-<link rel="canonical" href="http://www.20script.ir" />
 </html>

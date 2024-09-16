@@ -515,7 +515,7 @@ $config['use_page_numbers'] = TRUE;
 |--------------------------------------------------------------------------
 |
 */
-function __autoload($class) {
+function __spl_autoload_register($class) {
     if (substr($class,0,3) !== 'BUCKTY_') {
         if (file_exists($file = APPPATH . 'core/' . $class . '.php')) {
             include $file;

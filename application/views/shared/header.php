@@ -8,7 +8,7 @@
     <?php BucktyHead();?>
     <title><?= $site->site_name;?> - <?php echo $type == 'file' ? $item->file_name: $item->folder_name;?></title>
     <link rel="stylesheet" href="<?= $site->site_url;?>assets/css/app.css" type="text/css">
-    <!-- Open Graph data --><!-- www.bistscript.ir -->
+    <!-- Open Graph data -->
     <meta property="og:title" content="<?= $site->site_name;?> - <?php echo $type == 'file' ? $item->file_name: $item->folder_name;?>" />
     <meta property="og:type" content="<?= $type_content;?>" />
     <meta property="og:url" content="<?= $site->site_url;?>/shared/<?php echo $type == 'file' ? 'file': 'folder';?>/<?php echo $type == 'file' ? $item->hash: $item->folder_hash;?>" />

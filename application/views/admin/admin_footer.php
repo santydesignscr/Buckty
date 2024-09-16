@@ -70,7 +70,7 @@
         <div class="pull-right hidden-xs">
           <b>Version</b> 2.3.0
         </div>
-        <strong>Copyright &copy; 2014-2015 .</strong> All rights reserved. www.20script.ir
+        <strong>Copyright &copy; 2014-2015 .</strong> All rights reserved.
       </footer>
     <!-- Bootstrap 3.3.5 -->
     <script src="<?php echo $site->site_url;?>/assets/admin/js/bootstrap.min.js"></script>
