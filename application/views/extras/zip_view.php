@@ -1,0 +1,1 @@
+<input type="hidden" value="<?= $item->hash;?>" id="zip_url"/>

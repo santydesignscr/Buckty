@@ -1,0 +1,24 @@
+RewriteEngine on
+RewriteBase /sub
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /sub/index.php?/$1 [L]
+
+<FilesMatch ".(html|htm)$">
+Header set Cache-Control "max-age=43200"
+</FilesMatch>
+
+#cache css, javascript and text files for one week
+<FilesMatch ".(js|css|txt)$">
+Header set Cache-Control "max-age=604800"
+</FilesMatch>
+
+#cache flash and images for one month
+<FilesMatch ".(flv|swf|ico|gif|jpg|jpeg|png)$">
+Header set Cache-Control "max-age=2592000"
+</FilesMatch>
+
+#disable cache for script files
+<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+Header unset Cache-Control
+</FilesMatch>

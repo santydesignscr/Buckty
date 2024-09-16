@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Buckty - installation - www.scriptbaran.com</title>
+    <link rel="alternate" type="application/rss+xml" title="frittt.com" href="feed/index.html">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/prettify.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+
+            <div class="pull-left">
+                <h1><a href="https://buckty.com/" target="_blank"><img src="img/logo.png" alt="Buckty" /> <span>Buckty - Documentation</span></a></h1>
+            </div>
+
+            <div class="pull-right">
+                <a href="https://www.youtube.com/channel/UClE7T73eY0Qq0O3WuJIVGyg/featured" target="_blank" class="btn btn-download">
+                    <img src="img/YouTube.png" width="25" alt="Download Free Documentation Template" />Watch Videos</a>
+            </div>
+
+        </nav>
+        <header>
+            <div class="container">
+                <h2 class="lone-header">Detailed - Documentation</h2>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <ul class="docs-nav">
+                    <li><strong>Getting Started</strong></li>
+                    <li><a href="#welcome" class="cc-active">Welcome</a></li>
+                    <li><a href="#apis" class="cc-active">Api's introduction</a></li>
+                    <li><a href="#installation" class="cc-active">Installation</a></li>
+                    <li class="separator"></li>
+                    <li><a href="#apisettings" class="cc-active"><strong>Api Settings</strong></a></li>
+                    <li><a href="#facebook_api" class="cc-active">Facebook api settings</a></li>
+                    <li><a href="#google_api" class="cc-active">Google / drive api settings</a></li>
+                    <li><a href="#twitter_api" class="cc-active">Twitter api settings</a></li>
+                    <li><a href="#dropbox_api" class="cc-active">Dropbox api settings</a></li>
+                    <li><a href="#pexels_api" class="cc-active">Pexels api settings</a></li>
+                    <li class="separator"></li>
+                    <li><a href="#bucktyapi" class="cc-active"><strong>Buckty api introduction</strong></a></li>
+                     <li><a href="#credits" class="cc-active"><strong>Credits</strong></a></li>
+                </ul>
+                <div class="docs-content">
+                    <h2> Getting Started</h2>
+                    <h3 id="welcome"> Welcome To Buckty</h3>
+                    <p>Easy to use , easy to upload , easy to launch</p>
+                    <p>
+                        Welcome to <b>Buckty</b> documentation. I will explain you how to get buckty up and running with-in few minutes. Before proceeding to the installation please double check if you have the following modules installed.
+                    </p>
+                    <ul>
+                        <li>PHP version 5.2.4 or newer.</li>
+                        <li>Apache mode rewrite | enabled</li>
+                        <li>MySQL (5.1+) via the mysql (deprecated), mysqli and pdo drivers </li>
+                    </ul>
+                    <p><b>Note:</b>
+                        <br> Please make sure you increase your server's following limits and change them to high as possible.
+                    </p>
+                    <ul>
+                        <li>Memory limit : <a href="http://tutorials.hostucan.net/how-to-increase-php-memory-limit/" target="_blank">click here to check how to do it</a>
+                        </li>
+                        <li>Increase post_max_size & upload_max_filesize limits: <a href="http://stackoverflow.com/a/2184541/4388034" target="_blank">click here to check how</a></li>
+                        <li>Change <b>max_execution_time</b> to <b>0</b> <a href="http://stackoverflow.com/a/27529150/4388034" target="_blank">click here to check how</a></li>
+                    </ul>
+                    <h3 id="apis">Api introductions (Important):</h3>
+                    <p>Below is the api list used inside buckty's base system.</p>
+                    <ul>
+                        <li>Google plus api & Google drive api</li>
+                        <li>Dropbox api</li>
+                        <li>Twitter api</li>
+                        <li>Facebook api</li>
+                        <li>Pexels api</li>
+                    </ul>
+                    <p>
+                        <b>Api Notice:</b> It's important that you read this part of documentation. Dropbox api requires your site to use ssl protocols (https), else you can't use their api and it will result into an error or you can disable it from backend to avoid errors. We highly recommend you to use <b>HTTPS</b> as it secures the credentails of users and you have alot of other advantages. if you want to use free ssl cloud service we recommend you to use <b><a href="http://www.cloudflare.com/" target="_blank">cloudflare.com</a></b> Cloudflare provides you free to use secure ssl service and also cdn hosting network <b>But it's file upload is limited to 100mb</b>. if you don't want to use https then you have to <b>Disable dropbox api</b>, as it will not work without having https. You can use <b>Google drive</b> api without https (but still https is recommended).
+                    </p>
+                    <h3 id="installation">Installation</h3>
+                    <p>
+                        Connect to your server and upload all the files from folder <b>Buckty pack</b> to your server 's root folder or any sub folder where you want to install the buckty.
+                        <br>
+                        <br> Now if you visit your site link where you have uploaded buckty , you will see <b>Installation directory is present</b>, so it says all , you have to go to the installation path to install buckty , so do it by going to :
+                        <br>
+                        <code><b>http://yoursite.com/install</b></code>
+                        <br> Now you will see a bit of information before proceeding to installation.
+                        <br>
+                        <br>
+                        <img src="img/screen_1.png" alt="Installation 1" /> Click on <b>Proceed</b> button
+                        <br> Now you will have to fill up all the information for your site.
+                        <img src="img/screen_2.png" alt="Installation 1" />
+
+                        <b>All of the above information is required information , so please fill it carefully</b>. After installation you can change it inside admin dashboard.
+                        <br>
+                        <br> The introdcution of fields:
+                        <br>
+                        <br>
+                        <b>Site url :</b>
+                        <hr>
+                        <br> Url of the page where you are going to host your app , make sure it <b>ends with slash at end "/"</b>
+                        <br>
+                        <br>
+                        <b>Site path (important):</b>
+                        <hr>
+                        <br> If your site is located inside a subfolder you have to enter sub folder name inside this field. Please take a look at the situations below:
+                        <br> If you are pointing an subdomain to your subfolder -
+                        <br> &nbsp;&nbsp;&nbsp;&nbsp;for <b>sub.domain.com</b> - let the field be empty, do not add anything into the site path field then
+                        <br>
+                        <br> &nbsp;&nbsp;&nbsp;&nbsp;for <b>domain.com/sub</b> - in this case please enter the sub folder name into site path field.
+                        <br>
+                        <br>
+                        <b>Site name:</b>
+                        <hr>
+                        <br> This should be a title for your site.
+                        <br>
+                        <br>
+                        <b>Site admin email address:</b>
+                        <hr>
+                        <br> This should be an email for outgoing emails , so basically it can be :
+                        <b>info@yoursite.com</b> or
+                        <b>no-reply@yoursite.com</b>
+                        <br>
+                        <br>
+                        <b>Site keywords:</b>
+                        <hr>
+                        <br> Keywords for meta tags , it's good for your site if you fill these keywords devided by comma (,).
+                        <br>
+                        <br>
+                        <b>Site description:</b>
+                        <hr>
+                        <br> Description for your site meta description tag , to be shown on search engines, under your site link.
+                        <br>
+                        <br>
+                        <b>Site home tagline , Big Heading:</b>
+                        <hr>
+                        <br> It's big heading on homepage under the logo, choose the short and described one.
+                        <br>
+                        <br>
+                        <b>Site home description , Big Heading:</b>
+                        <hr>
+                        <br> It's description on homepage under the big heading, choose the short and described one.
+                        <br>
+                        <br>
+                        <b>Site upload limit (in bytes):</b>
+                        <hr>
+                        <br> This should be a total space for every user to be used for uploading her/his files. You can convert the quotes you want to bytes from the following site: <a href="http://www.whatsabyte.com/P1/byteconverter.htm" target="_blank"><b>Converter</b></a>, You should be using <b>Bytes</b> for the field. (it is must that you use bytes).
+                        <br>
+                        <img src="img/bytes.png" />
+                        <br>
+                        <br>
+                        <b>Site upload limit (in bytes):</b>
+                        <hr>
+                        <br> This should be a max file size to be uploaded in uploading process. You can convert the quotes you want to bytes from the following site: <a href="http://www.whatsabyte.com/P1/byteconverter.htm" target="_blank"><b>Converter</b></a>, You should be using <b>Bytes</b> for the field. (it is must that you use bytes).
+                        <br>
+                        <span style="font-weight:bold;font-size:14px;">Important</span>:
+                        <br> Please enter the values according to what post_max_size & upload_max_file_size in php.ini limits , else if you want to use the higher upload limits you have to change the:
+                        <br>
+                        <b>post_max_size: 8mb;</b>
+                        <br>
+                        <b>upload_max_file_size: 8mb;</b>
+                        <br> You have to change the above values inside <b>php.ini</b> to higher numbers , else if you don't change inside php.ini and inside buckty's settings you state some higher number , it can result into an error.
+                        <img src="img/bytes.png" />
+                        <br>
+                        <br>
+                        <b>Allowed file extensions:</b>
+                        <hr> The allowed extensions for files to be uploaded , if you want to allow specific files they must need to be devided by comma (,) eg: <em>jpeg,png,zip,doc,pdf</em>, else if you want to allow all types you can use <b>*</b>.
+                        <br>
+                        <br>
+                        <b>Disqus Comments (shortname):</b>
+                        <hr> This field should contains disqus commenting system 's shortname , you can get your site shortname by registering to the following link : <a href="https://disqus.com/admin/signup/?utm_source=New-Site" target="_blank"><b>Disqus site registration</b></a>
+                        <br>
+                        <br>
+                        <span style="font-weight:bold;font-size:14px;">Mail settings</span>:
+                        <br> We highly recommend using : <a href="https://smtp2go.com/" target="_blank">smtp2go.com</a> as this services was tested and used with buckty, but you can use any other service you want to use for your mails.
+                        <b>It is required</b> that you use the smtp service , this will be used to:
+                        <br>
+                        <ul>
+                            <li>Send registration emails</li>
+                            <li>Send recovery emails</li>
+                            <li>Send sharing information emails and others also.</li>
+                        </ul>
+                        <b>SMTP HOST (eg: ssl://mail.smtp2go.com/):</b>
+                        <hr> In this field you should provide a host name of smtp service , it is highly recommended that you use secure hostname as this example: ssl://mail.smtp2go.com/ , as it will work without any problem.
+                        <br>
+                        <br>
+                        <b>SMTP port (eg: 465):</b>
+                        <hr> In this field you should fill the smtp <b>port</b>, every website can have different ports and for ssl smtp port you can use one of the following ports: <b>25</b>, <b>465</b>, <b>587</b>
+                        <br>
+                        <br>
+                        <b>SMTP user (eg: no-reply@buckty.com):</b>
+                        <hr> In this field you should fill the username for smtp service.
+                        <br>
+                        <br>
+                        <b>SMTP user (your password):</b>
+                        <hr> In this field you should fill the password for smtp service.
+                        <br>
+                        <br>
+                        <img src="img/screen_3.png">
+                        <br> Now you are good to proceed with clicking <b>Validate</b> button you will be taken to database host information form.
+
+                        <span style="font-weight:bold;font-size:14px;">Database information</span>:
+                        <br> In this section you should provide valid database details for the buckty to be installed on your server, make sure you have database created or a permission for creating one , as if you have not created a database yet buckty will autoamtically create one with name you provided in form.
+                        <br>
+                        <br>
+                        <img src="img/screen_4.png">
+                        <br> Now the next form you will see is admin credentials, Make sure you use secure password, the account will be created for both side admin and normal dashboard so you can use both sides at same time.
+                        <br>
+                        <img src="img/screen_5.png">
+                        <br> Now at the end of installation you have to rename your <b>install</b> folder inside root of the buckty, else the site will not work , until you not remove or rename the folder.
+                        <br>
+                        <img src="img/screen_end.jpg">
+                        <br>
+                    </p>
+                    <h3 id="apisettings">Api settings</h3>
+                    <p>
+                        Login to your account and then go to the following menu below:
+                        <br>
+                        <img src="img/screen_6.png">
+                        <br>
+                        <br> Then go to <b>Settings</b> on top , then <b>api's</b> and here you will see all the api's details to be filled in. Let's have a look at them and how to setup them.
+                    </p>
+                    <span id="facebook_api" style="font-weight:bold;font-size:14px;">Facebook api</span>:
+                    <br>
+                    <p>
+                        In this section we are going to setup our facebook api settings.
+                        <br> First of go to the following url and register for you app on facebook developer console.
+                        <br>
+                        <a href="https://developers.facebook.com/apps/" target="_blank">developers.facebook.com</a>
+                        <br> After link opend click on <b>Add a New app</b> button.
+                        <br>
+                        <img src="img/screen_7.png">
+                        <br>and it will ask you about whihc kind of platform is your app using, we will select <b>Website</b>
+                        <br>
+                        <img src="img/screen_8.png">
+                        <br> After clicking on <b>Website</b>, You will be asked to name your app and then click on <b>Create New Facebook App ID</b>
+                        <br>
+                        <img src="img/screen_9.png">
+                        <br> After that you will be taken to anther page just click on <b>Skip Quick Start</b> button and you will be taken to app page with details.
+                        <br>
+                        <img src="img/screen_11.png">
+                        <br> Now on the details page you will see your <b>Api key</b> & <b>Api Secret key</b>
+                        <br>
+                        <img src="img/screen_12.png">
+                        <br> First thing to do now is got to <b>Settings tab and Follow steps below</b>
+                        <br>
+                        <img src="img/screen_13.png">
+                        <br> After clicking on add platform button you will see popup which looks like this:
+                        <br>
+                        <img src="img/screen_14.png">
+                        <br> Click on <b>Website</b> and Then follow the below steps:
+                        <br>
+                        <img src="img/screen_15.png">
+                        <br> Now let's go back to our Buckty 's dashboard and add the <b>Api details</b> inside Facebook Form and udpdate it.
+                        <br>
+                        <img src="img/screen_16.png">
+                        <br>
+
+                    </p>
+                    <span id="google_api" style="font-weight:bold;font-size:14px;">Google / drive api</span>:
+                    <br>
+                    <p>
+                        In this section we are going to setup our Google api alogn with drive api. So let's move on to it , first thing to do is go to the following url:
+                        <br>
+                        <a href="https://console.developers.google.com/project" target="_blank">Developers Console</a>
+                        <br> Now let's follow the bellow step and click on <b>Create project</b> button
+                        <br>
+                        <img src="img/screen_17.png">
+                        <br> After clicking on create project , you will have to name the project
+                        <br>
+                        <img src="img/screen_18.png">
+                        <br> Now When the project creates , follow the steps and click on <b>Enable and Manage api's</b> link:
+                        <br>
+                        <img src="img/screen_19.png">
+                        <br> And then you have to enable two of the api's stated in the screenshot below and then follow the other steps:
+                        <br>
+                        <img src="img/screen_20.png">
+                        <br> Now you have to name the App by going to <b>Credentails > OAuth consent screen</b> tab :
+                        <br>
+                        <img src="img/screen_21.png">
+                        <br> Now you will be taken to <b>Credentails</b>, and now we have to creae <b>Client id</b>, follow the step below:
+                        <br>
+                        <img src="img/screen_22.png">
+                        <br> Now let's fill up the requested details for creating credentials , you have to fill up callback url for drive and Google login , look at the screenshot below and change <b>yoursite.com</b> with your own domain:
+                        <br>
+                        <img src="img/screen_23.png">
+                        <br> After clicking on create button You will be taken to final page with your api details:
+                        <br>
+                        <img src="img/screen_24.png">
+                        <br> Now let's go back to our buckty admin dashboard and setup the new api details for google
+                        <br>
+                        <img src="img/screen_25.png">
+                        <br>
+                    </p>
+                    <span id="twitter_api" style="font-weight:bold;font-size:14px;">Twitter api</span>:
+                    <br>
+                    <p>
+                        In this section we are going to setup our Twitter api login, let's move on it, first thing to do is go to the following link:
+                        <br>
+                        <a href="https://apps.twitter.com" target="_blank">app.twitter.com</a>
+                        <br> Now let's follow the steps and click on <b>Create new app</b> button
+                        <br>
+                        <img src="img/screen_26.png">
+                        <br> Now you will be asked to fill up the details for you app , call backurl should be something like this, <b>https://yoursite.com/hauth/endpoint?hauth.end=twitter</b> replace yousite.com with your site url.
+                        <br>
+                        <img src="img/screen_27.png">
+                        <br> Now you will be taken to another page , just click on <b>Keys and access token</b> tab and you will see your api key and api secret key:
+                        <br>
+                        <img src="img/screen_28.png">
+                        <br>
+                    </p>
+                    <span id="dropbox_api" style="font-weight:bold;font-size:14px;">Dropbox api</span>:
+                    <br>
+                    <p>
+                        In this section we are going to setup the <b>Dropbox api</b>.
+                        <br>
+                        <br>
+                        <b> Important:</b>
+                        <br> For using dropbox api , you must have an ssl(https) for your site else you can't use dropbox's api so it is a must that you have one.
+                        <br>
+                        <br> Let's start with setting it up. First thing to do is go to the following url and create your app for dropbox api.
+                        <br>
+                        <img src="img/screen_29.png">
+                        <br> Now you will be taken to details page , and you will have an options for setting the api, First thing should be <b>Apply for Production</b> by clicking on button <b>Apply for Production</b>. An then follow and add <b>Redirect uri</b> , the redirect uri should be : <b>https://yoursite.com/dropbox/end</b>, replace yousite.com with your url.
+                        <br>
+                        <img src="img/screen_30.png">
+                        <br>
+
+                    </p>
+                    <span id="pexels_api" style="font-weight:bold;font-size:14px;">Pexels api</span>:
+                    <br>
+                    <p>
+                        For pexels api go to the following url and follow up the process they require you to have their api key , so basically they ask you to send an email to them to get the api key.
+                        <br>
+                        <a href="https://pexels.com/api" target="_blank">pexels.com/api</a>
+                    </p>
+                    <h3 id="bucktyapi">Buckty api introduction</h3>
+                    <p>
+                        Buckty supports little api that can allow users to get their own information and informations about their files into json array, here i will show you how any user can access their files and folders information and also login / update via api.
+                        <br> Below are the example parameters buckty require to give an access to api.
+                    </p>
+                    <pre class="prettyprint">
+b_auth -> Api authorization key<br> 
+b_user -> Api user key<br>
+https://yoursite.com/api/files?b_auth=DoiH8kp0znRK6pFmOH2ZNifB4vP40s&b_user=NifB4vP40s<br>
+                </pre>
+                <p>
+                    Users can get their api details by going to : <b>Settings</b> And click on <b>Api Access</b> button inside their settings page.<br>
+                    if the user haven't yet generated an api key , he will see a generate button to generate the api key , user have to click on <b>Generate key</b> button to generate the api key, and use that api to access api.<br>
+                    <span id="dropbox_api" style="font-weight:bold;font-size:14px;">Upload file via api</span>:<br>
+                    Users can <b>upload the file</b> with api by using their <b>api</b> key and user key. Take a look below about how it can be done:<br>
+                    <b>Parameters required to upload:</b><br>
+                    <ul>
+                        <li>b_auth - Authrization key</li>
+                        <li>b_user  - User key</li>
+                        <li>absoluteUrl - link to the file (if not the file wil not be uploaded</li>
+                    </ul><br>
+                    Url to upload file:<br>
+                    <pre class="prettyprint">
+https://yoursite.com/api/request?&nbsp;b_auth=DoiH8kp0znRK6pFmOH2ZNifB4vP40s&nbsp;&b_user=NifB4vP40s&nbsp;&absoluteUrl=(link)
+                    </pre><br>
+                <span id="dropbox_api" style="font-weight:bold;font-size:14px;">list files / folders</span>:<br>
+                <b>Parameters required to get list:</b><br>
+                    <ul>
+                        <li>b_auth - Authrization key</li>
+                        <li>b_user  - User key</li>
+                    </ul><br>
+                 <pre class="prettyprint">
+For file:<br>                 
+https://yoursite.com/api/files?&nbsp;b_auth=DoiH8kp0znRK6pFmOH2ZNifB4vP40s&nbsp;&b_user=NifB4vP40s<br><br>
+For folders:<br>
+https://yoursite.com/api/folders?&nbsp;b_auth=DoiH8kp0znRK6pFmOH2ZNifB4vP40s&nbsp;&b_user=NifB4vP40s<br><br>
+                    </pre><br>
+                
+                 <span id="dropbox_api" style="font-weight:bold;font-size:14px;">User details</span>:<br>
+                <b>Parameters required to get list:</b><br>
+                    <ul>
+                        <li>b_auth - Authrization key</li>
+                        <li>b_user  - User key</li>
+                    </ul><br>
+                 <pre class="prettyprint">               
+https://yoursite.com/api/user?&nbsp;b_auth=DoiH8kp0znRK6pFmOH2ZNifB4vP40s&nbsp;&b_user=NifB4vP40s<br><br>
+                    </pre><br>
+                </p>
+                <h1 id="credits">Credits</h1>
+            <p>
+                We are happy to give the credtis to the poeple who created the following open source projects to make it bit easier the things.
+                <ul>
+                    <li><a href="https://www.codeigniter.com/" target="_blank">Codeingiter - PHP framwork</a></li>
+                    <li><a href="https://github.com/emreakay/CodeIgniter-Aauth" target="_blank">Aauth - Authentication library</a></li>
+                     <li><a href="https://jquery.com/" target="_blank">jQuery - JAVASCRIPT library</a></li>
+                    <li><a href="https://jqueryui.com/" target="_blank">jQuery - jQuery user interface</a></li>
+                    <li><a href="https://disqus.com/" target="_blank">Disqus comments system.</a></li>
+                    <li><a href="https://pexels.com/" target="_blank">Pexels for random background image.</a></li>
+                    <li><a href="https://almsaeedstudio.com/preview" target="_blank">Admin lte - admin dashboard</a></li>
+                    <li><a href="https://github.com/google/google-api-php-client" target="_blank">Google php sdk</a></li>
+                    <li><a href="https://github.com/dropbox/dropbox-sdk-php" target="_blank">Dropbox php sdk</a></li>
+                    <li><a href="http://aehlke.github.io/tag-it/" target="_blank">Tagit - for tag inputs</a></li>
+                </ul>
+            We are really happy to give huge credits to <b>Google</b> & <b>Dropbox</b> For making their api's available and well documentated
+            
+            </p>
+                </div>
+            </div>
+        </section>
+        <section class="vibrant centered">
+            <div class="">
+                <a href="http://codecanyon.net/user/icodeapps" target="_blank"><img src="img/logo_icode.jpg" width="100" height="100"/></a>
+                <h4>Copyright © 2016 icodeapps | <a href="https://buckty.com/" target="_blank">Buckty.com</a></h4>
+            </div>
+        </section>
+        <footer>
+        </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/prettify/prettify.js"></script>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+    <script src="js/layout.js"></script>
+</body>
+
+</html>
